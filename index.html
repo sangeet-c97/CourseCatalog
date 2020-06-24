@@ -1,0 +1,313 @@
+<html>
+    <head>
+        <title>
+            Course Catalog Website 
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <!-- Navidation Bar - Link: https://getbootstrap.com/docs/4.5/components/navbar/ -->
+        <section id = "nav-bar">
+            <!-- Removing the "bg-list" from class will result in change in the background color of the Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!-- Image of a Logo can be added using "img" tag -->
+                <a class="navbar-brand" href="#">Course Catalog Website
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Span tag is an inline container used to mark up a part of a text, a part of a document. It is easily styled by CSS or maipulated with Javascrip using the "class" or "id" attribute. -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- "ml-auto" added to the class name to align the list items to the right hand side of the Navigation bar. -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#top">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        
+        <!-- Slider -->
+        <div id = "slider">
+            <div id="headerSlider" class="carousel slide" data-ride="carousel">
+                <ol class="headerSlider">
+                    <li data-target="#cheaderSlider" data-slide-to="0" class="active">
+                    </li>
+                    <li data-target="#headerSlider" data-slide-to="1">
+                    </li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Images/N.jpg" class="d-block img-fluid">
+                        <div class = "carousel-caption">
+                            <h5>Read reviews so you make better decisions</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/K.jpg" class="d-block img-fluid">
+                        <div class = "carousel-caption">
+                            <h5>Write reviews so others make better decisions</h5>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- About -->
+        <section id = "about">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-md-6">
+                        <h3>About Us</h3>
+                        <div class = "about-content">
+                            <p>
+                                We are a team of 5 people, who are trying to index every knowledge source present on the Internet. At present, there is a lot of information available on the internet, but there isn't any platform that is trying to segregate the good content from the bad.
+                            </p>
+                            <p>
+                                 Early participants of the internet thought that the problem of discoverability will be solved with more and more people onboarding, because we have a tendency of highlighting things which are unique, and sometimes important. But what has actually happened is not something that people hoped for. While the internet has increased the overall utility of the society, discoverability still remains an issue (probably a bigger issue now than before), specially when it comes to identifying ways we can educate ourselves!
+                            </p>
+                        </div>
+                        <button type = "button" class = "btn btn-primary">
+                        Read More >>
+                        </button>
+                    </div>
+                    <div class = "col-md-6 skills-bar">
+                        <h3>Where we stand today?</h3>
+                        <p>Innovation</p>
+                        <div class = "progress">
+                            <div class = "progress-bar" style = "width: 50%;">
+                                50%
+                            </div>
+                        </div>
+                        <p>Entertainment</p>
+                        <div class = "progress">
+                            <div class = "progress-bar" style = "width: 100%;">
+                                100%
+                            </div>
+                        </div>
+                        <p>Humanity</p>
+                        <div class = "progress">
+                            <div class = "progress-bar" style = "width: 40%;">
+                                40%
+                            </div>
+                        </div>
+                        <p>Health</p>
+                        <div class = "progress">
+                            <div class = "progress-bar" style = "width: 50%;">
+                                50%
+                            </div>
+                        </div>
+                        <p>Discoverability</p>
+                        <div class = "progress">
+                            <div class = "progress-bar" style = "width: 20%;">
+                                20%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services -->
+        <section id = "services">
+            <div class = "container">
+                <h3>Our Services</h3>
+                <div class = "row services">
+                    <div class = "col-md-3 text-center">
+                        <div class = "icon">
+                            <i class="fa fa-lightbulb-o"></i>
+                        </div>
+                        <h4>Innovation</h4>
+                        <p>Ours is the first platform where learners can review and compare all courses on the Internet. </p>
+                    </div>
+                    <div class = "col-md-3 text-center">
+                        <div class = "icon">
+                            <i class="fa fa-address-book-o"></i>
+                        </div>
+                        <h4>Humanity</h4>
+                        <p>Enforcing our Guidelines have helped our learners interact in an open environment. </p>
+                    </div>
+                    <div class = "col-md-3 text-center">
+                        <div class = "icon">
+                            <i class="fa fa-medkit"></i>
+                        </div>
+                        <h4>Health</h4>
+                        <p>Our website is more peaceful than other communities, and nudges you to take care of your health.</p>
+                    </div>
+                    <div class = "col-md-3 text-center">
+                        <div class = "icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <h4>Discoverability</h4>
+                        <p>We continue to strive to improve the discoverability of courses and other sources of knowledge.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Team Members -->
+        <section id = "team">
+            <div class = "container">
+                <h3>Our Team</h3>
+                <div class = "row">
+                    <div class = "col-md-3 profile-pic text-center">
+                        <div class = "img-box">
+                            <img src = "Images/images.jpeg" class = "img-responsive">
+                            <ul>
+                                <a href = "#">
+                                    <li>
+                                        <i class = "fa fa-facebook"></i>
+                                    </li>
+                                </a>
+                                <a href = "#">
+                                    <li>
+                                        <i class = "fa fa-linkedin"></i>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <h5>Anirudh Gupta</h5>
+                        <h6>Chief Revenue Officer</h6>
+                        <p>Key Responsibility: Keeping himself happy!</p>
+                    </div>
+                    <div class = "col-md-3 profile-pic text-center">
+                        <div class = "img-box">
+                            <img src = "Images/images.jpeg" class = "img-responsive">
+                            <ul>
+                                <a href = "#">
+                                    <li>
+                                        <i class = "fa fa-facebook"></i>
+                                    </li>
+                                </a>
+                                <a href = "#">
+                                    <li>
+                                        <i class = "fa fa-linkedin"></i>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <h5>Anupriya Gupta</h5>
+                        <h6>Chief Experience Officer</h6>
+                        <p>Key Responsibility: Keeping herself happy!</p>
+                    </div>
+                    <div class = "col-md-3 profile-pic text-center">
+                        <div class = "img-box">
+                            <img src = "Images/images.jpeg" class = "img-responsive">
+                            <ul>
+                                <a href = "#">
+                                    <li>
+                                        <i class = "fa fa-facebook"></i>
+                                    </li>
+                                </a>
+                                <a href = "#">
+                                    <li>
+                                        <i class = "fa fa-linkedin"></i>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <h5>Saurav Sinha</h5>
+                        <h6>Chief Technology Officer</h6>
+                        <p>Key Responsibility: Keeping himself happy!</p>
+                    </div>
+                    <div class = "col-md-3 profile-pic text-center">
+                        <div class = "img-box">
+                            <img src = "Images/images.jpeg" class = "img-responsive">
+                            <ul>
+                                <a href = "#">
+                                    <li>
+                                        <i class = "fa fa-facebook"></i>
+                                    </li>
+                                </a>
+                                <a href = "#">
+                                    <li>
+                                        <i class = "fa fa-linkedin"></i>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <h5>Vishak Regu</h5>
+                        <h6>Chief Marketing Officer</h6>
+                        <p>Key Responsibility: Keeping himself happy!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Us -->
+        <section id = "contact">
+            <div class = "container">
+                <h3>Contact Us</h3>
+                <div class = "row">
+                    <div class = "col-md-6">
+                        <form class = "contact-form" action = "contact-form-handler.php">
+                            <div class = "form-group">
+                                <input name = "name" type = "text" class = "form-control" placeholder = "Name" required>
+                            </div>
+                            <div class = "form-group">
+                                <input name = "phone" type = "number" class = "form-control" placeholder = "Phone Number" required>
+                            </div>
+                            <div class = "form-group">
+                                <input name = "email" type = "email" class = "form-control" placeholder = "E-mail ID">
+                            </div>
+                            <div class = "form-group">
+                                <textarea name = "message" class = "form-control" rows = "10" placeholder = "Message" required></textarea>
+                            </div>
+                            <button type = "submit" class = "btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class = "col-md-6 contact-info">
+                        <div class = "follow">
+                            <b>Meet Us:</b><i class = "fa fa-map-marker"></i> II Floor, House Number 4, Vishya Vihar Colony, North Sunderwas, Udaipur - 313003
+                        </div>
+                        <div class = "follow">
+                            <b>Call Us:</b><i class = "fa fa-phone"></i> +91-6377951249
+                        </div>
+                        <div class = "follow">
+                            <b>Email Us:</b><i class = "fa fa-envelope"></i> sangeetc97@gmail.com
+                        </div>
+                        <div class = "follow">
+                            <label>
+                                <b>Get Social:</b>
+                            </label>
+                            <a href = "#"><i class = "fa fa-linkedin"></i></a>
+                            <a href = "#"><i class = "fa fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </section>
+        <!-- Smooth Scrolling -->
+        <script src="Javascript/smooth-scroll.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+    </body>
+</html>
